@@ -73,8 +73,9 @@ def get_tokenizer(args):
 def load_dataset_splits(args):
     if args.mode == 'pt':
         dataset = datasets.load_dataset(
-            'c4',
-            'en',
+            'allenai/c4',
+            'cs',
+            trust_remote_code=True,
             streaming=True,
         )
 
