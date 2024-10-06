@@ -61,3 +61,8 @@ logging:
 hydra:
   job:
     chdir: True
+
+# Tokenizer training
+tokenizer:
+  save_path: '../tokenizer'
+  vocab_size: 32128
